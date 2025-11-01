@@ -21,7 +21,7 @@ A modern communication platform combining Gmail-style email management with an A
 
 1. Clone the project:
    \`\`\`bash
-   git clone https://github.com/yourusername/email-chat-platform.git
+   git clone https://github.com/ROHIT3496484/blue-bash-assignment--email-chatbot/
    cd email-chat-platform
    \`\`\`
 
