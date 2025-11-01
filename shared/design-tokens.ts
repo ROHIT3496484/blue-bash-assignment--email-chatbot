@@ -1,0 +1,108 @@
+// Comprehensive shared design tokens for all micro-frontends
+
+export const designTokens = {
+  colors: {
+    primary: {
+      50: "oklch(0.985 0 0)",
+      100: "oklch(0.97 0 0)",
+      200: "oklch(0.94 0 0)",
+      300: "oklch(0.91 0 0)",
+      400: "oklch(0.88 0 0)",
+      500: "oklch(0.85 0 0)",
+      600: "oklch(0.205 0 0)",
+      700: "oklch(0.18 0 0)",
+      800: "oklch(0.15 0 0)",
+      900: "oklch(0.145 0 0)",
+    },
+    secondary: {
+      50: "oklch(0.985 0 0)",
+      100: "oklch(0.97 0 0)",
+      500: "oklch(0.556 0 0)",
+      900: "oklch(0.205 0 0)",
+    },
+    accent: {
+      50: "oklch(0.985 0 0)",
+      500: "oklch(0.97 0 0)",
+      900: "oklch(0.205 0 0)",
+    },
+    neutral: {
+      0: "oklch(1 0 0)",
+      50: "oklch(0.985 0 0)",
+      100: "oklch(0.97 0 0)",
+      200: "oklch(0.94 0 0)",
+      300: "oklch(0.91 0 0)",
+      400: "oklch(0.88 0 0)",
+      500: "oklch(0.708 0 0)",
+      600: "oklch(0.556 0 0)",
+      700: "oklch(0.439 0 0)",
+      800: "oklch(0.269 0 0)",
+      900: "oklch(0.145 0 0)",
+      950: "oklch(0.08 0 0)",
+    },
+    status: {
+      success: "oklch(0.646 0.222 41.116)",
+      warning: "oklch(0.828 0.189 84.429)",
+      error: "oklch(0.577 0.245 27.325)",
+      info: "oklch(0.6 0.118 184.704)",
+    },
+  },
+  spacing: {
+    0: "0",
+    1: "0.25rem",
+    2: "0.5rem",
+    3: "0.75rem",
+    4: "1rem",
+    6: "1.5rem",
+    8: "2rem",
+    12: "3rem",
+    16: "4rem",
+    20: "5rem",
+    24: "6rem",
+  },
+  typography: {
+    fontFamily: {
+      sans: "'Geist', 'Geist Fallback', system-ui, sans-serif",
+      mono: "'Geist Mono', 'Geist Mono Fallback', monospace",
+    },
+    fontSize: {
+      xs: { size: "0.75rem", lineHeight: "1rem" },
+      sm: { size: "0.875rem", lineHeight: "1.25rem" },
+      base: { size: "1rem", lineHeight: "1.5rem" },
+      lg: { size: "1.125rem", lineHeight: "1.75rem" },
+      xl: { size: "1.25rem", lineHeight: "1.75rem" },
+      "2xl": { size: "1.5rem", lineHeight: "2rem" },
+      "3xl": { size: "1.875rem", lineHeight: "2.25rem" },
+      "4xl": { size: "2.25rem", lineHeight: "2.5rem" },
+    },
+    fontWeight: {
+      light: 300,
+      normal: 400,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+    },
+  },
+  borderRadius: {
+    none: "0",
+    sm: "0.25rem",
+    base: "0.375rem",
+    md: "0.5rem",
+    lg: "0.625rem",
+    xl: "1rem",
+    full: "9999px",
+  },
+  shadows: {
+    sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+    base: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+    md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+    lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+    xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+  },
+  transitions: {
+    fast: "150ms ease-in-out",
+    base: "200ms ease-in-out",
+    slow: "300ms ease-in-out",
+  },
+}
+
+export type DesignTokens = typeof designTokens

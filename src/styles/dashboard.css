@@ -1,0 +1,139 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: hsl(var(--accent));
+}
+
+.dashboard-header p {
+  font-size: 1.1rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.feature-card {
+  background-color: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-card:hover {
+  border-color: hsl(var(--primary));
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.1);
+  transform: translateY(-4px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  color: hsl(var(--primary));
+}
+
+.feature-card p {
+  color: hsl(var(--muted-foreground));
+  flex: 1;
+}
+
+.feature-link {
+  display: inline-block;
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+.feature-link:hover {
+  background-color: hsl(var(--primary) / 0.9);
+}
+
+.architecture-section {
+  background-color: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+.architecture-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: hsl(var(--primary));
+}
+
+.architecture-diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.arch-box {
+  background-color: hsl(var(--secondary));
+  border: 2px solid hsl(var(--primary));
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-align: center;
+  min-width: 200px;
+}
+
+.arch-box strong {
+  display: block;
+  color: hsl(var(--primary));
+  margin-bottom: 0.5rem;
+}
+
+.arch-box p {
+  color: hsl(var(--muted-foreground));
+  font-size: 0.9rem;
+}
+
+.arch-arrow {
+  font-size: 1.5rem;
+  color: hsl(var(--primary));
+}
+
+@media (max-width: 768px) {
+  .dashboard-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .architecture-diagram {
+    flex-direction: column;
+  }
+
+  .arch-arrow {
+    transform: rotate(90deg);
+  }
+}
