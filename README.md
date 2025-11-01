@@ -27,6 +27,10 @@ A modern communication platform combining Gmail-style email management with an A
 
 2. Install dependencies:
    \`\`\`bash
+   npm install --legacy-peer-deps
+   npm cache clean --force
+   Remove-Item -Recurse -Force node_modules
+   Remove-Item package-lock.json
    npm install
    \`\`\`
 
